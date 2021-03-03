@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<BorderPane fx:id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="offline_plagiarism_checker.offline_plagiarism_checkerController">
+   <left>
+      <AnchorPane prefHeight="393.0" prefWidth="286.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="16.0" layoutY="14.0" prefHeight="30.0" prefWidth="284.0" text="Office documents are not suppoted e.g word, ppt, etc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="file_btn" layoutX="17.0" layoutY="465.0" mnemonicParsing="false" onAction="#selectFiles" prefHeight="33.0" prefWidth="261.0" text="Choose Files" />
+            <TextArea fx:id="selected_files" layoutX="16.0" layoutY="58.0" prefHeight="397.0" prefWidth="262.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="61.0" prefWidth="737.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="177.0" layoutY="1.0" prefHeight="27.0" prefWidth="389.0" text="Designed &amp; Developed by TEAM Plagiarism Checker " textFill="#000000a7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="512.0" prefWidth="468.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="analyze" layoutX="96.0" layoutY="465.0" mnemonicParsing="false" onAction="#analyzeClicked" prefHeight="33.0" prefWidth="268.0" text="Analyze" />
+            <TextArea fx:id="output_message" layoutX="11.0" layoutY="55.0" prefHeight="400.0" prefWidth="423.0" />
+            <Label fx:id="output_heading" layoutX="73.0" layoutY="14.0" prefHeight="27.0" prefWidth="314.0" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="output_error" layoutX="77.0" layoutY="165.0" prefHeight="27.0" prefWidth="306.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <Region prefHeight="393.0" prefWidth="7.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <MenuBar fx:id="menu_bar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeBtn" mnemonicParsing="false" onAction="#closeProgram" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="docs" mnemonicParsing="false" onAction="#openDocs" text="Docs" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+         <stylesheets>
+      <URL value="@style.css" />
+   </stylesheets>
+</BorderPane>

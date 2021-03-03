@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 6, 2021, 12:05:38 AM
+    Author     : El Salvacion
+*/
+.root
+{
+    -fx-background-color: lightblue;
+}
+
+/* Menubar */
+#menu_bar
+{
+    -fx-font : 18px "serief"; 
+}
+
+/* file Chooser */
+#file_location
+{
+    -fx-border-radius: 5px;
+    -fx-background-color: lightgray;
+    -fx-border-color: darkgrey;
+    -fx-background-color: transparent;
+
+}
+
+#file_btn {
+    -fx-border-radius: 10px;
+    -fx-border-color: green;
+    -fx-background-radius: 10px;
+    -fx-font : 18px "serief"; 
+}
+
+#analyze
+{
+    -fx-border-radius: 10px;
+    -fx-background-color: lightgreen;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-font : 18px "serief"; 
+}
+
+#label
+{
+    -fx-font : 16px "serief"; 
+    -fx-text-fill: #f2f2f2;
+}
+
